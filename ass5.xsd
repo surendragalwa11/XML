@@ -1,0 +1,59 @@
+<xsd:schema xmlns:rules="http://drools.org/rules" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:a="http://drools.org/rules" xmlns:f="Things" targetNamespace="Things" elementFormDefault="qualified">
+  <xsd:element name="Pari" type="Paris"/>
+  <xsd:complexType name="Paris">
+    <xsd:sequence>
+      <xsd:element name="Hotel" type="Hotels" minOccurs='1' maxOccurs='4'/>
+    </xsd:sequence>
+  </xsd:complexType>
+        
+  <xsd:complexType name="Hotels">
+    <xsd:sequence>
+      <xsd:element name="ID" type="ID"/>
+      <xsd:element name="Name" type="xsd:string"/>
+      <xsd:element name="Stars" type="Stars"/>
+      <xsd:element name="Facilities" type="Facilities" minOccurs='1' maxOccurs='5'/>
+      <xsd:element name="Address" type="xsd:string"/>
+      <xsd:element name="Distance" type="xsd:number" maxOccurs='1'/>
+      <xsd:element name="Available" type="Available"/>
+    </xsd:sequence>
+  </xsd:complexType>
+        
+  <xsd:element name="ID">
+    <xsd:simpleType> 
+      <xsd:restriction base="xsd:integer">
+        <xsd:minInclusive value="1"/>
+        <xsd:maxInclusive value="4"/>
+      </xsd:restriction>
+      </xsd:simpleType>
+  </xsd:element>
+        
+  <xsd:element name="Stars">
+    <xsd:simpleType> 
+      <xsd:restriction base="xsd:integer">
+        <xsd:minInclusive value="1"/>
+        <xsd:maxInclusive value="5"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+        
+  <xsd:element name="Facillities" >
+    <xsd:simpleType> 
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Internet"/>
+        <xsd:enumeration value="Gym"/>
+        <xsd:enumeration value="Parking"/>
+        <xsd:enumeration value="Restaurent"/>
+        <xsd:enumeration value="Pick-up"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+        
+  <xsd:element name="Available"> 
+    <xsd:simpleType> 
+      <xsd:restriction base="xsd:string">
+        <xsd:pattern value="[True]|[False]"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+   
+</xsd:schema>

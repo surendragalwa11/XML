@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Pari xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='ass3.xsd'>
+    <Hotel>
+        <ID>1</ID>
+        <Name>Les Jardind Du Marais</Name>
+        <Stars>3</Stars>
+        <Facilities>Internet</Facilities>
+        <Facilities></Facilities>
+        <Facilities></Facilities>
+        <Address>74 rue Amelot,Paris,750023</Address>
+        <Distance>2</Distance>
+        <Available>True</Available>
+    </Hotel>
+    <Hotel>
+        <ID></ID>
+        <Name></Name>
+        <Stars></Stars>
+        <Facilities></Facilities>
+        <Facilities></Facilities>
+        <Facilities></Facilities>
+        <Address></Address>
+        <Distance></Distance>
+        <Available></Available>
+    </Hotel>
+    <Hotel>
+        <ID></ID>
+        <Name></Name>
+        <Stars></Stars>
+        <Facilities></Facilities>
+        <Facilities></Facilities>
+        <Facilities></Facilities>
+        <Address></Address>
+        <Distance></Distance>
+        <Available></Available>
+    </Hotel>
+
+</Pari>

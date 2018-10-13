@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<COMPANY
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='ass2.xsd'>
+    <EMPLOYEE>
+        <FirstName></FirstName>
+        <lastName></lastName>
+        <ContactNo></ContactNo>
+        <Email></Email>
+        <Address>
+            <City></City>
+            <State></State>
+            <Zip></Zip>
+        </Address>
+    </EMPLOYEE>
+
+</COMPANY>

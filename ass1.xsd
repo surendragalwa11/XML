@@ -1,0 +1,55 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="BOOKS" type="books"/>
+<xsd:complexType name="books">
+<xsd:sequence>
+    <xsd:element name="BOOK" type="book" minOccurs="1" maxOccurs="3"/>
+</xsd:sequence>
+</xsd:complexType>
+
+  <xsd:complexType name="book">
+    <xsd:sequence>
+      
+	  <xsd:element name="title" > 
+	     <xsd:restriction  base="xsd:string">
+		 <xsd:pattern value="[P]|[H]"/>
+	     </xsd:restriction>
+	  </xsd:element>
+	  
+      <xsd:element name="edition">
+	    <xsd:restriction base="xsd:integer">
+		<xsd:pattern value="[0-9]{8}"/>
+	    </xsd:restriction>
+      </xsd:element>
+	  
+      <xsd:element name="author" type="author" minOccurs="1" maxOccurs="2"/>
+	  
+      <xsd:element name="publishedDate" type="xsd:date"/>
+      <xsd:element name="type" type="xsd:string"/>
+      <xsd:element name="price" >
+	   <xsd:restriction base="xsd:decimal">
+	     <xsd:minExclusive value="0"/>
+	     <xsd:totalDigits value="5"/> 
+             <xsd:fractionDigits value="2"/> 
+           </xsd:restriction> 
+     </xsd:element>
+    </xsd:sequence>
+	
+	<xsd:attribute name="book" type="xsd:integer" use="required"/>
+  </xsd:complexType>
+  
+  <xsd:complexType name="author">
+  <xsd:sequence>
+     <xsd:element name="firstName" type="xsd:string" use="required"/>
+	 <xsd:element name="middleName">
+	    <xsd:restriction  base="xsd:string">
+	    <xsd:pattern value="[a-z]"/>
+		</xsd:restriction>
+	 </xsd:element>
+	 <xsd:element name="lastName" type="xsd:string"  use="required"/> 
+  </xsd:sequence>
+  </xsd:complexType>
+
+
+</xsd:schema>

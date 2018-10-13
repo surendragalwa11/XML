@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Paris>
+    <Hotel>
+        <ID>1</ID>
+        <Name>Les Jardind Du Marais</Name>
+        <Stars>3</Stars>
+        <Facilities>Internet</Facilities>
+        <Facilities></Facilities>
+        <Facilities></Facilities>
+        <Address>74 rue Amelot,Paris,750023</Address>
+        <Distance>2</Distance>
+        <Available>True</Available>
+    </Hotel>
+    <Hotel>
+        <ID>2</ID>
+        <Name>Golden Tollip little palace</Name>
+        <Stars>4</Stars>
+        <Facilities>Internet</Facilities>
+        <Facilities>Gym</Facilities>
+        <Facilities>Parking</Facilities>
+        <Address>$ rue Salomon De Caus,Paris,75004</Address>
+        <Distance>0.1</Distance>
+        <Available>False</Available>
+    </Hotel>
+    <Hotel>
+        <ID>3</ID>
+        <Name>Tilsitt Etolie</Name>
+        <Stars>2</Stars>
+        <Facilities>Restuarent</Facilities>
+        <Facilities>Gym</Facilities>
+        <Facilities></Facilities>
+        <Address>23 rue Brey,Paris,76002</Address>
+        <Distance>3</Distance>
+        <Available>False</Available>
+    </Hotel>
+
+</Paris>
